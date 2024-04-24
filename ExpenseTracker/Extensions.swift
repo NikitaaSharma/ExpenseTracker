@@ -14,3 +14,21 @@ extension Color {
     static let apptext = Color("Text")
     static let systemBackground = Color(uiColor: .systemBackground)
 }
+
+extension DateFormatter {
+    static let allNumericIndia: DateFormatter = {
+        print("Initialising DateFormatter")
+        let formatter = DateFormatter()
+        formatter.dateFormat = "DD/mm/yyyy"
+        
+        return formatter
+    }()
+}
+
+extension String {
+    func dateParse() -> Date {
+        guard let parseDate = DateFormatter.allNumericIndia.date(from: self) else { return Date() }
+        
+        return parseDate
+    }
+}
