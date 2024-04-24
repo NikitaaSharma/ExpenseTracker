@@ -12,7 +12,7 @@ struct ContentView: View {
             NavigationView{
                 ScrollView{
                     VStack(alignment: .leading, spacing: 24) {
-                        Text("Checking git push again")
+                        Text("Expense Tracker")
                             .font(.title2)
                             .bold()
                     }
