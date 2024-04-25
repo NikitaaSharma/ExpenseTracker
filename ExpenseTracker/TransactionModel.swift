@@ -32,7 +32,7 @@ struct Transaction : Identifiable, Decodable, Hashable {
     }
     
     var dateParsed: Date {
-        date.dateParse()
+        date.dateParsed()
     }
     
     var signedAmout: Double {
