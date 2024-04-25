@@ -15,6 +15,9 @@ struct ContentView: View {
                         Text("Expense Tracker")
                             .font(.title2)
                             .bold()
+                        
+                        // MARK: Transaction List
+                        RecentTransactionList()
                     }
                     .padding()
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -35,15 +38,18 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let transactionListVM: TransactionListViewModel = {
+        let transactionListVM = TransactionListViewModel()
+        transactionListVM.transactions = transactionListPreviewData
+        return transactionListVM
+    }()
+
     static var previews: some View {
         Group{
             ContentView()
             ContentView()
                 .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
         }
+        .environmentObject(transactionListVM)
     }
-}
-
-#Preview {
-    ContentView()
 }

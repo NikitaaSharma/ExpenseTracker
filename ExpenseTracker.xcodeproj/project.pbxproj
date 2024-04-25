@@ -17,6 +17,8 @@
 		BF9054472BD92CA60018279D /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9054462BD92CA60018279D /* TransactionRow.swift */; };
 		BF90544A2BD9357A0018279D /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = BF9054492BD9357A0018279D /* SwiftUIFontIcon */; };
 		BF90544C2BD936590018279D /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90544B2BD936590018279D /* TransactionListViewModel.swift */; };
+		BF90544E2BD968050018279D /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90544D2BD968050018279D /* RecentTransactionList.swift */; };
+		BF9054502BDA48BE0018279D /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF90544F2BDA48BE0018279D /* TransactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BF9054422BD92BD80018279D /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		BF9054462BD92CA60018279D /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		BF90544B2BD936590018279D /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		BF90544D2BD968050018279D /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
+		BF90544F2BDA48BE0018279D /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +69,10 @@
 			children = (
 				BF9054162BD9176D0018279D /* ExpenseTrackerApp.swift */,
 				BF9054182BD9176D0018279D /* ContentView.swift */,
+				BF90544D2BD968050018279D /* RecentTransactionList.swift */,
 				BF9054462BD92CA60018279D /* TransactionRow.swift */,
 				BF90544B2BD936590018279D /* TransactionListViewModel.swift */,
+				BF90544F2BDA48BE0018279D /* TransactionList.swift */,
 				BF9054402BD92ADF0018279D /* TransactionModel.swift */,
 				BF9054242BD9196E0018279D /* Extensions.swift */,
 				BF90541A2BD9176F0018279D /* Assets.xcassets */,
@@ -161,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9054432BD92BD80018279D /* PreviewData.swift in Sources */,
+				BF9054502BDA48BE0018279D /* TransactionList.swift in Sources */,
+				BF90544E2BD968050018279D /* RecentTransactionList.swift in Sources */,
 				BF9054412BD92ADF0018279D /* TransactionModel.swift in Sources */,
 				BF9054192BD9176D0018279D /* ContentView.swift in Sources */,
 				BF9054252BD9196E0018279D /* Extensions.swift in Sources */,
